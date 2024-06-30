@@ -116,6 +116,28 @@ Ex: a = 'pyton'
 5. Mutable or Immutable
 
 6. Built_in_functions
+Mutable - if user can increase or decrese memory.
+Immutable - if user cannot increase or decrease memory.
+
+String - It is used to find ASCII number, memory address.
+       - String is Immutable
+       - String does indexing, slicing and skipping.
+#### Built_in_functions:
+- capitalize
+- title
+- lower
+- upper
+- islower
+- isupper
+- startswith
+- endswith
+- isalpha
+- isnumeric
+- isalnum
+- count
+- index
+- split
+- join
 
 
 
