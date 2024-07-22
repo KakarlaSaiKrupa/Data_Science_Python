@@ -407,6 +407,7 @@ output: [10,19,7,17]
 **deletion**
 - pop
 - remove
+
 **other**
   
 - count
