@@ -54,23 +54,33 @@ There are 4 different rules to create a variable
 - Variable should not start with a number if needed
   we want to start with the underscore(_).
 
-  EX:  _9a=100
+  EX:  
+
+       _9a=100
 - Variable should be single word or single character but not       multiple words if needed we have to use underscore(_).
 
-  Ex: Sai_Ram = 100
+  Ex: 
+       
+       Sai_Ram = 100
+
 - Python variables are completely case sensitive.
 
   Ex: 
 
       name ='sai'
+
       print(NAME) #here call name because it is case sensitive
-      output: error
+
+output: error
 
 - Punctuations are not used as a variable 
 
-  Ex: $=100 
-      print($) 
-      output: Invalid 
+  Ex:  
+
+        $=100 
+        print($) 
+
+output: Invalid 
 
 ## Relation between print and variable :
 - Using , (comma) inside the print we can add one data type with other data type and comma gives one tab space.
@@ -178,16 +188,18 @@ String - It is used to find ASCII number, memory address.
 
 **capitalize** : It will capital the starting letter.
 
-Ex: a='sai baba'
-
+Ex: 
+     
+    a='sai baba'
     a.capitalize()
     print(a)
 output: Sai baba
 
 **title** : It will capital each word starting letter into capital.
 
-Ex: a='sai baba'
-
+Ex: 
+    
+    a='sai baba'
     a.title()
     print(a)
 
@@ -195,108 +207,124 @@ output: Sai Baba
 
 **lower** : All the capital letters are converted into small letters.
 
-Ex: a='AmeriCA'
-
+Ex: 
+    
+    a='AmeriCA'
     print(a.lower())
 
 output: america
 
 **upper** : All the small letters are converted into capital letters.
 
-Ex: a='AmeriCA'
+Ex: 
     
+    a='AmeriCA'
     print(a.upper())
 
 output: AMERICA
 
 **islower** : It checks whether all are small letters or not , if it is small that says True , if not False.
 
-Ex: a='AmeriCA'
+Ex: 
 
+    a='AmeriCA'
     print(a.islower())
 
 output: False
 
 **isupper** : It checks whether all are capital letters or not , if it is capital that says True , if not False.
 
-Ex: a='AmeriCA'
+Ex: 
 
+    a='AmeriCA'
     print(a.isupper())
 
 output: False
 
 **isalpha** : It will check all are alphabets or not.
 
-Ex: a='america123'
+Ex: 
 
+    a='america123'
     print(a.isalpha())
 
 output: False
 
 **isnumeric** : It will check all are numbers or not.
 
-Ex: a='1223'
+Ex: 
+    
+    a='1223'
     print(a.isnumeric())
 
 output: True
 
 **isalnum** : It contains both the numbers and alphabets, but not the space.
 
-Ex: a='python123'
+Ex: 
 
+    a='python123'
     print(a.isalnum())
 
 output: True
 
 **startswith** : It takes input from user and checks whether the starting letter matches with the given letter and if matches it prints as True , or else False.
 
-Ex: a= 'deep learning'
+Ex: 
     
+    a= 'deep learning'
     print(a.startswith('p'))
 
 output: False
 
 **endswith** : It takes input from user and checks whether the ending letter matches with the given letter and if matches it prints as True , or else False.
 
-Ex: a='deep learning'
- 
+Ex: 
+    
+    a='deep learning'
     print(a.endswith('g'))
 
 output: True
 
 **replace** : It will replace a string.
 
-Ex: a='joy'
-
+Ex: 
+    
+    a='joy'
     print(a.replace('j','r'))
 
 output: roy
 
 **count** : It is used to count the number of times a given character is repeating.
 
-Ex: a='data science'
-    
+Ex: 
+
+    a='data science'
     print(a.count('a'))
 
 output: 2
 
 **index** : It is used to find the index of a given character.
 
-Ex: a='data science'
+Ex: 
 
+    a='data science'
     print(a.index('e'))
 
 output: 8
 
 - len function : It is used to find length of a string.
 
-Ex: len('sai')
+Ex: 
+     
+     len('sai')
    
 output: 3
 
 #### string and substring
-Ex: a='python is very simple language'
-
+Ex: 
+    
+    a='python is very simple language'
     print('is' in a)
 
 output: True
@@ -305,9 +333,7 @@ output: True
 Ex:
 
     python = 'ab' #9506
-
     java   = 'CD' #4556
-
     print(python > java) #9506>4556
 
 output: True
@@ -349,7 +375,9 @@ chr(97) - 'a'
 
 List is represented in the square braces - []
 
-Ex: a = [10,20.55,'data']
+Ex: 
+    
+    a = [10,20.55,'data']
 
 1. Memory Allocation
 
@@ -405,11 +433,12 @@ output: [10,19,7,17]
 - insert
 
 **deletion**
+
 - pop
 - remove
 
 **other**
-  
+
 - count
 - index
 - copy
@@ -420,6 +449,7 @@ output: [10,19,7,17]
 **append** : It will take single value from the user and will add to the exixting list only at the end.
 
 Ex: 
+
      a = [10,50,3,13]
 
      a.append(500)
@@ -429,7 +459,6 @@ Ex:
 output: [10,50,3,13,500]
 
 - Note : we can't append two values a.append(200,300) # error
-
 
 
 
