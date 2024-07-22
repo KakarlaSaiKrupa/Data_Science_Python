@@ -399,13 +399,16 @@ output: [10,19,7,17]
 
 ### Built_in_Functions:
 **addition** 
+
 - append
 - extend
 - insert
+
 **deletion**
 - pop
 - remove
 **other**
+  
 - count
 - index
 - copy
