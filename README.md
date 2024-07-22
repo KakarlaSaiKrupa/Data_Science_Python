@@ -446,6 +446,8 @@ output: [10,19,7,17]
 - sort
 - reverse
 
+### for adding
+
 **append** : It will take single value from the user and will add to the exixting list only at the end.
 
 Ex: 
@@ -460,12 +462,245 @@ output: [10,50,3,13,500]
 
 - Note : we can't append two values a.append(200,300) # error
 
+**extend** : It will take many value multiple values from the user and will add to the existing list only at the end.
 
+Ex: 
 
+    a=[10,50,3,13]
+    a.extend([1,2])
+    print(a)
 
+output: [10,50,3,13,1,2]
 
+**insert** : we can add values where ever we ant it need index number where we wanted to add.
 
+Ex: 
 
+    a=[10,50,3,13]
+    a.insert(2,300)
+    print(a)
 
+output: [10,50,300,3,13]
 
+### for deleting
 
+**pop** : pop will remove last value defaultly but if we pass a number it will treat like index.
+
+Ex:
+   
+    a=[10,50,3,13]
+    a.pop()
+    print(a)
+
+output: [10,50,3]
+
+    a=[10,50,3,13]
+    a.pop(2)#giving index value and removing
+    print(a)
+
+output: [10,50,13]
+
+**remove** : It will value directly and remove the value.
+
+Ex: 
+   
+    a=[10,50,3,13]
+    a.remove(50)
+    print(a)
+
+output: [10,3,13]
+
+**replace** : It replaces the value.
+
+Ex: 
+
+    a=[10,50,3,13]
+    a[1]=5
+    print(a)
+
+output: [10,5,3,13]
+
+**count** : used to count the values. 
+
+Ex: 
+    
+    a=[1,2,4,5,1,3,19,30,1]
+    print(a.count(1))
+
+output: 3
+
+**index** : used to find the index of a given value.
+
+Ex: 
+
+    a=[1,2,4,5,1,3,19,30,1]
+    print(a.index(19))
+
+output: 6
+
+**clear** : It is used to clear the data from the variable but variable will be alive in the memory. 
+
+Ex: 
+
+    a=[1,2,4,5]
+    a.clear()
+    print(a)
+
+output: []
+
+**copy** : There are 2 types of copy techniques
+
+- deep copy
+-shallow copy
+
+**deep copy** :
+
+Ex:  
+    
+    a=[10,20,50]
+    b=a
+    print(a)
+    print(b)
+
+output: 
+
+        [10,20,50]
+
+        [10,20,50]
+
+    print(id(a))
+    print(id(a))
+
+output:
+        
+        13363760886528
+     
+        13363760886528
+
+**shallow copy** :
+
+Ex:
+   
+    a=[10,20,50]
+    b=a.copy()
+    print(a)
+    print(b)
+    print(id(a))
+    print(id(b))
+    a.append(100)
+    print(a)
+    print(b)
+
+output:
+  
+    [10,20,50]
+
+    [10,20,50]
+
+    12345567856
+
+    12342346578
+
+    [10,20,50,100]
+
+    [10,20,50]
+
+**reverse** : [::-1]
+
+Ex:
+   
+    a=[10,20,30,40,50]
+    a.reverse()
+    print(a)
+
+output:
+    
+    [50,40,30,20,10]
+
+**sort** : ascending and descending orders.
+
+Ex: 
+
+    a=[9,1,5,7,11,13,6,2,8]
+    a.sort() #default ascending order
+    print(a)
+
+output: 
+
+    [1,2,5,6,7,8,9,11,13]
+
+Ex: 
+
+    descending order
+    a=[9,1,5,7,11,13,6,2,8]
+    a.sort(reverse=True)
+    print(a)
+
+output: 
+
+    [13,11,9,8,7,6,5,2,1]
+
+# Python Tuple Concept
+- Python tuple is represented  in parenthesis -> ()
+
+Ex: 
+
+    a=(10,55.55,'data')
+
+- user can pass anything inside the tuple like int | float | string | boolean.
+- memory allocation, indexing, slicing, skipping are same as string and list only.
+
+**Slicing** :
+
+Ex:
+    
+    a=(10,4,17,9,21,36)
+    print(a[2])
+
+output: 17
+
+**Slicing** :
+
+Ex:
+   
+    a=(10,4,17,9,21,36)
+    print(a[1:4])
+
+output: (4,17,9)
+
+**Skipping** :
+
+Ex: 
+
+    a=(10,4,17,9,21,36)
+    print(a[::3])
+
+output: (10,9)
+
+**Mutable or Immutable** :
+- Tuple is **Immutable**
+
+**Built_in_Functions** :
+- It has 2 built_in_functions only
+
+       - count
+       - index
+
+**count** : 
+
+Ex:
+
+    a=(10,4,17,9,21,36)
+    a.count(4)
+    print(a)
+
+output: 1
+
+**index** : 
+
+Ex: 
+
+    a=(10,4,17,9,21,36)
+    print(a.index(36))
+
+output: 5
