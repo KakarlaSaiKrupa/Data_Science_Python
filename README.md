@@ -85,9 +85,14 @@ output: Invalid
 ## Relation between print and variable :
 - Using , (comma) inside the print we can add one data type with other data type and comma gives one tab space.
 - Using + we can add string data type along with given variables but we need to make sure that given variables are also string and the + operator won't give any tab space.
-- Using Identifiers like %d -> int
+- Using Identifiers like
+                        
+                         %d -> int
+
                          %f -> float
+
                          %s -> str
+
 - Using { } and f function.
   if f see anything in the flower braces, it prints which is in {}flower braces
 
@@ -113,7 +118,9 @@ output: Invalid
 # Python String Concept:
 String is represented in the quotes - ' '
 
-Ex: a = 'pyton'
+Ex: 
+
+    a = 'python'
 
 1. Memory Allocation
 
@@ -126,6 +133,12 @@ Ex: a = 'pyton'
 5. Mutable or Immutable
 
 6. Built_in_functions
+
+**Memory Allocation** : Memory allocation can be defined as allocating a block of space in the computer memory to a program.
+
+Ex: 
+    
+    a = 'sai'
 
 **Indexing** : 2 types
 
@@ -193,7 +206,10 @@ Ex:
     a='sai baba'
     a.capitalize()
     print(a)
-output: Sai baba
+
+output: 
+
+    Sai baba
 
 **title** : It will capital each word starting letter into capital.
 
@@ -203,7 +219,9 @@ Ex:
     a.title()
     print(a)
 
-output: Sai Baba
+output: 
+    
+    Sai Baba
 
 **lower** : All the capital letters are converted into small letters.
 
@@ -212,7 +230,9 @@ Ex:
     a='AmeriCA'
     print(a.lower())
 
-output: america
+output: 
+    
+    america
 
 **upper** : All the small letters are converted into capital letters.
 
@@ -221,7 +241,9 @@ Ex:
     a='AmeriCA'
     print(a.upper())
 
-output: AMERICA
+output: 
+    
+    AMERICA
 
 **islower** : It checks whether all are small letters or not , if it is small that says True , if not False.
 
@@ -230,7 +252,9 @@ Ex:
     a='AmeriCA'
     print(a.islower())
 
-output: False
+output: 
+    
+    False
 
 **isupper** : It checks whether all are capital letters or not , if it is capital that says True , if not False.
 
@@ -239,7 +263,9 @@ Ex:
     a='AmeriCA'
     print(a.isupper())
 
-output: False
+output: 
+    
+    False
 
 **isalpha** : It will check all are alphabets or not.
 
@@ -248,7 +274,9 @@ Ex:
     a='america123'
     print(a.isalpha())
 
-output: False
+output: 
+    
+    False
 
 **isnumeric** : It will check all are numbers or not.
 
@@ -257,7 +285,9 @@ Ex:
     a='1223'
     print(a.isnumeric())
 
-output: True
+output: 
+    
+    True
 
 **isalnum** : It contains both the numbers and alphabets, but not the space.
 
@@ -266,7 +296,9 @@ Ex:
     a='python123'
     print(a.isalnum())
 
-output: True
+output: 
+    
+    True
 
 **startswith** : It takes input from user and checks whether the starting letter matches with the given letter and if matches it prints as True , or else False.
 
@@ -275,7 +307,9 @@ Ex:
     a= 'deep learning'
     print(a.startswith('p'))
 
-output: False
+output: 
+    
+    False
 
 **endswith** : It takes input from user and checks whether the ending letter matches with the given letter and if matches it prints as True , or else False.
 
@@ -284,7 +318,9 @@ Ex:
     a='deep learning'
     print(a.endswith('g'))
 
-output: True
+output: 
+    
+    True
 
 **replace** : It will replace a string.
 
@@ -293,7 +329,9 @@ Ex:
     a='joy'
     print(a.replace('j','r'))
 
-output: roy
+output: 
+    
+    roy
 
 **count** : It is used to count the number of times a given character is repeating.
 
@@ -302,7 +340,9 @@ Ex:
     a='data science'
     print(a.count('a'))
 
-output: 2
+output: 
+    
+    2
 
 **index** : It is used to find the index of a given character.
 
@@ -311,15 +351,19 @@ Ex:
     a='data science'
     print(a.index('e'))
 
-output: 8
+output: 
+     
+    8
 
 - len function : It is used to find length of a string.
 
 Ex: 
      
-     len('sai')
+    len('sai')
    
-output: 3
+output: 
+     
+    3
 
 #### string and substring
 Ex: 
@@ -327,7 +371,9 @@ Ex:
     a='python is very simple language'
     print('is' in a)
 
-output: True
+output: 
+    
+    True
 
 ## Operators in strings
 Ex:
@@ -336,7 +382,9 @@ Ex:
     java   = 'CD' #4556
     print(python > java) #9506>4556
 
-output: True
+output: 
+    
+    True
 
 Based on the ASCII(American Standard Code for Information Interchange) values it gives the output.
 
@@ -391,15 +439,23 @@ Ex:
 
 6. Built_in_functions
 
+**Memory Allocation** : Memory allocation can be defined as allocating a block of space in the computer memory to a program.
+
+Ex: 
+
+    a = [10,50,'python']
+
 **Indexing** : 
 
 Ex:
      
-     a = [10,55.55,'data']
+    a = [10,55.55,'data']
 
-     print(a[1])
+    print(a[1])
 
-output: 55.55
+output: 
+    
+    55.55
 
 **Slicing**:
 
@@ -409,7 +465,9 @@ Ex:
 
     print(a[2:5])
   
-output: 19,3,7
+output: 
+
+    19,3,7
 
 **Skipping**:
 
@@ -419,7 +477,9 @@ Ex:
 
     print(a[::2])
 
-output: [10,19,7,17]
+output: 
+    
+    [10,19,7,17]
 
 **Mutable or Immutable**:
  - List is **Mutable**
@@ -452,13 +512,15 @@ output: [10,19,7,17]
 
 Ex: 
 
-     a = [10,50,3,13]
+    a = [10,50,3,13]
 
-     a.append(500)
+    a.append(500)
 
-     print(a)
+    print(a)
 
-output: [10,50,3,13,500]
+output: 
+    
+    [10,50,3,13,500]
 
 - Note : we can't append two values a.append(200,300) # error
 
@@ -470,7 +532,9 @@ Ex:
     a.extend([1,2])
     print(a)
 
-output: [10,50,3,13,1,2]
+output: 
+    
+    [10,50,3,13,1,2]
 
 **insert** : we can add values where ever we ant it need index number where we wanted to add.
 
@@ -480,7 +544,9 @@ Ex:
     a.insert(2,300)
     print(a)
 
-output: [10,50,300,3,13]
+output: 
+    
+    [10,50,300,3,13]
 
 ### for deleting
 
@@ -492,13 +558,18 @@ Ex:
     a.pop()
     print(a)
 
-output: [10,50,3]
+output: 
+
+    [10,50,3]
+Ex: 
 
     a=[10,50,3,13]
     a.pop(2)#giving index value and removing
     print(a)
 
-output: [10,50,13]
+output: 
+
+     [10,50,13]
 
 **remove** : It will value directly and remove the value.
 
@@ -508,7 +579,9 @@ Ex:
     a.remove(50)
     print(a)
 
-output: [10,3,13]
+output: 
+    
+    [10,3,13]
 
 **replace** : It replaces the value.
 
@@ -518,7 +591,9 @@ Ex:
     a[1]=5
     print(a)
 
-output: [10,5,3,13]
+output: 
+    
+    [10,5,3,13]
 
 **count** : used to count the values. 
 
@@ -527,7 +602,9 @@ Ex:
     a=[1,2,4,5,1,3,19,30,1]
     print(a.count(1))
 
-output: 3
+output: 
+    
+    3
 
 **index** : used to find the index of a given value.
 
@@ -536,7 +613,9 @@ Ex:
     a=[1,2,4,5,1,3,19,30,1]
     print(a.index(19))
 
-output: 6
+output: 
+    
+    6
 
 **clear** : It is used to clear the data from the variable but variable will be alive in the memory. 
 
@@ -546,14 +625,16 @@ Ex:
     a.clear()
     print(a)
 
-output: []
+output:
+    
+     []
 
 **copy** : There are 2 types of copy techniques
 
 - deep copy
--shallow copy
+- shallow copy
 
-**deep copy** :
+**deep copy** : It has same address.
 
 Ex:  
     
@@ -561,23 +642,16 @@ Ex:
     b=a
     print(a)
     print(b)
-
+    print(id(a))
+    print(id(a))
 output: 
 
-        [10,20,50]
+    [10,20,50]
+    [10,20,50]
+    13363760886528 
+    13363760886528
 
-        [10,20,50]
-
-    print(id(a))
-    print(id(a))
-
-output:
-        
-        13363760886528
-     
-        13363760886528
-
-**shallow copy** :
+**shallow copy** : It has different address and if we add value to a it won't copy in b.
 
 Ex:
    
@@ -594,18 +668,13 @@ Ex:
 output:
   
     [10,20,50]
-
     [10,20,50]
-
     12345567856
-
     12342346578
-
     [10,20,50,100]
-
     [10,20,50]
 
-**reverse** : [::-1]
+**reverse** : [::-1] It reverses the given input.
 
 Ex:
    
@@ -645,19 +714,39 @@ output:
 
 Ex: 
 
-    a=(10,55.55,'data')
+    a = (10,55.55,'data')
+
+1. Memory Allocation
+
+2. Indexing
+
+3. Slicing
+
+4. Skipping
+
+5. Mutable or Immutable
+
+6. Built_in_functions
+
+**Memory Allocation** : Memory allocation can be defined as allocating a block of space in the computer memory to a program.
+
+Ex:
+    
+    a = (10,20.66,'python)
 
 - user can pass anything inside the tuple like int | float | string | boolean.
 - memory allocation, indexing, slicing, skipping are same as string and list only.
 
-**Slicing** :
+**Indexing** :
 
-Ex:
-    
+Ex:  
+
     a=(10,4,17,9,21,36)
     print(a[2])
 
-output: 17
+output: 
+
+    17
 
 **Slicing** :
 
@@ -666,7 +755,9 @@ Ex:
     a=(10,4,17,9,21,36)
     print(a[1:4])
 
-output: (4,17,9)
+output: 
+    
+    (4,17,9)
 
 **Skipping** :
 
@@ -675,12 +766,15 @@ Ex:
     a=(10,4,17,9,21,36)
     print(a[::3])
 
-output: (10,9)
+output: 
+    
+    (10,9)
 
 **Mutable or Immutable** :
 - Tuple is **Immutable**
 
 **Built_in_Functions** :
+
 - It has 2 built_in_functions only
 
        - count
@@ -694,7 +788,9 @@ Ex:
     a.count(4)
     print(a)
 
-output: 1
+output: 
+
+    1
 
 **index** : 
 
@@ -703,4 +799,213 @@ Ex:
     a=(10,4,17,9,21,36)
     print(a.index(36))
 
-output: 5
+output: 
+    
+    5
+
+# Python Sets Concept
+- Python sets are represented in flower braces -> **{}**
+
+Ex:
+
+     a = {10,20,30,40}
+
+- Memory Allocation
+
+- Mutable or Immutable
+
+- Built_in_functions
+
+**Memory Allocation** : Memory allocation can be defined as allocating a block of space in the computer memory to a program.
+
+Ex:
+   
+    a = {10,30,40,60,70}
+
+- Allocation of memory is unordered in sets.
+
+- Python sets are unordered pairs, which means there will be no index concept,if there is no index means no slicing and skipping.
+
+- Python sets don't allow **duplicates values**.
+
+Ex:
+
+    a = {10,20,30,50,10,100,20,10}
+    print(a)
+
+output:
+
+    {50,100,20,10,30}
+
+**Mutable or Immutable** : 
+
+- Python sets are **Mutable**.
+- Python sets are mutable but they **don't allow mutable types** inside the set.
+
+Ex: 
+
+    a = {10,55.55,'data',[1,2,3]}#here list is mutable 
+    print(a)
+
+output: 
+    error
+     
+    unhashable type:'list'
+
+- Manually we can't prove that set is mutable but by using built_in_functions we can prove it as mutable.
+
+**Built_in_Functions** :
+
+- add
+- update
+- pop
+- discard
+- remove
+- clear
+- copy
+- union
+- intersection
+
+**add** : It will take only one input from the user and will add to the existing set **randomly**.
+
+Ex: 
+
+    a = {10,5,6,20,98,45}
+    a.add(600)
+    print(a)
+
+output: 
+    
+    {98,20,5,6,600,10,45}
+
+**update** : It takes multiple values from the user and will add  to the existing set randomly.
+
+Ex:
+    
+    a = {10,5,6,20,98,45}
+    a.update([100,200,300])
+    print(a)
+
+output:
+    
+    {5,6,200,10,20,98,100,300,45}
+
+**pop** : It will remove any one value randomly.
+
+Ex:
+    
+    a = {10,5,6,20,98,45}
+    a.pop()
+    print(a)
+
+output: 
+
+    {20,5,6,10,45}
+
+**discard** : It will take only one input from the user and if the input is available in the set, it will remove or else it will remain silent.
+
+Ex: 
+  
+    a = {10,5,6,20,98,45}
+    a.discard(98)
+    print(a)
+
+output:
+     
+    {20,5,6,10,45}
+
+**remove** : It will take only one input from the user and if the input is available in the set, it will remove or else it will throw an error.
+
+Ex: 
+
+    a = {10,5,6,20,98,45}
+    a.remove(900)
+    print(a)
+
+output: 
+     
+    error
+    not found value 900
+    
+**copy** : 2 types
+- deep copy
+- shallow copy
+
+**deep copy** : same address and it copies values in a to b are same.
+
+Ex: 
+
+    a = {10,5,6,30,98,45}
+    b=a
+    print(a)
+    print(b)
+    print(id(a))
+    print(id(b))
+
+output:
+
+    {20, 5, 39, 10, 45}
+    {20, 5, 39, 10, 45}
+    133192238102144
+    133192238102144
+
+**shallow copy** : It has different address and if we add value to a it won't copy in b.
+ 
+Ex:
+    
+    a={10,20,39,45,5}
+    b=a.copy()
+    print(a)
+    print(b)
+    a.add(1000)
+    print(id(a))
+    print(id(b))
+    print(a)
+    print(b)
+
+output:
+     
+    {20, 5, 39, 10, 45}
+    {20, 5, 39, 10, 45}
+    133192238101696
+    133192238103488
+    {20, 5, 39, 1000, 10, 45}
+    {20, 5, 39, 10, 45}
+
+**union** : 
+
+Ex: 
+
+    a={1,2,3,4,5,6}
+    b={5,6,7,8,9,10}
+    print(a.union(b))
+
+output: 
+
+    {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+**intersection** : 
+
+Ex:
+
+    a={1,2,3,4,5,6}
+    b={5,6,7,8,9,10}
+    print(a.intersection(b))
+
+output: 
+
+    {5,6}
+
+**clear** : 
+- Empty set representation -> set()
+
+Ex:
+
+    a = {1,10,15,19,25}
+    a.clear()
+    print(a)
+
+output: 
+
+    set()
+
