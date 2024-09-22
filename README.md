@@ -1009,3 +1009,77 @@ output:
 
     set()
 
+# Python Dictionary Concept
+- Python Dictionary are represented in flower braces -> **{Key_Value}**
+
+- Dictionary is used to prepare the structured data but not to show the data. Dictionary will be represented with ->{Key_Value} sets are also represented with {}, but dictionary is represented with Key-Value pair where key is the column name and value is the column value.
+
+EX:
+
+    a = {'Age':30,'Loc':'Chennai','Salary':1200}
+    print(a)
+    print(type(a))
+
+output:
+ 
+    {'Age':30,'Loc':'Chennai','Salary':1200}
+
+- In dictionary values can be anything 
+Ex: 
+   
+    a = {'Age':30,'Salary':55.55,'Loc':'Hyd','Pincode':(500085),'State':['Telangana'],'data':{1,2,3}}
+    print(a)
+    
+output:
+  {'Age':30,'Salary':55.55,'Loc':'Hyd','Pincode':(500085),'State':['Telangana'],'data':{1,2,3}}
+
+- Mutable types are not allowed in dictionary as a **key**
+Ex: 
+    a = {1:500,2.2:800,'loc':'hyd',['pincode']:(500085)}
+    print(a)
+output:
+    error
+    Unhashable the list
+
+#### To call multiple values
+Ex:
+    a = {'Age':[0,40,50],'Loc':['Chennai','Banglore','Hyderabad'],'Salary':[1200,1800,2200]}
+    print(a)
+    print(a['Loc'])
+output:
+    ['Chennai','Banglore','Hyderabad']
+### Dictionary is Mutabl or Immutable
+Ex: adding to dictionary
+
+    fruits = {'apple':500 ,'carrot':100}
+    print(f'Before adding :{fruits})
+    fruits['banana'] = 1000
+    print(f'After adding :{fruits})
+output: 
+
+    Before adding :{'apple':500,'carrot':100}
+    After adding :{'apple':500,'carrot':100,'banana':1000}
+
+Ex: deleting from dictionary
+
+    fruits = {'apple':500 ,'carrot':100,'banana':1000}
+    print(f'Before deleting :{fruits})
+    del fruits['carrot']
+    print(f'After deleting :{fruits})
+output: 
+
+    Before adding :{'apple':500,'carrot':100,'banana':1000}
+    After adding :{'apple':500,'banana':1000}
+- From these operations we can say that dictionary is **Mutable**
+
+## Dictionary Built_in_Functions:
+- get 
+- update 
+- pop 
+- popitem
+- key 
+- value
+- items
+- clear
+- copy
+
