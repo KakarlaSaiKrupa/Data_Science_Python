@@ -1094,7 +1094,7 @@ output:
 
     100
 
-***update** : It is used to add key_value to the existing dictionary.
+**update** : It is used to add key_value to the existing dictionary.
 
 Ex:
 
