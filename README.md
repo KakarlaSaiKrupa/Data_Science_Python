@@ -1104,7 +1104,7 @@ Ex:
 
 output:
 
- {'apple':500,'carrot':100,'banana':1000,'grapes':200}
+    {'apple':500,'carrot':100,'banana':1000,'grapes':200}
 
 **pop** : It will take key from the user and will remove that key_value.
 
@@ -1200,6 +1200,7 @@ output:
 **shallow copy** : It has different address and if we add value to a it won't copy in b.
 
 Ex:
+
     b={'apple':500,'carrot':100,'banana':1000}
     a=b.copy()
     print(a)
@@ -1214,4 +1215,277 @@ output:
     138914831763712
     138914831764480
 
+
+# Control Statements
+Control statements in Python are used to control the flow of execution of a program based on certain conditions or loops.
+### Looping Statements
+
+    - for loop
+    - while loop
+
+### Conditional Statements
+
+    - if
+    - else
+    - elif
+    
+### Control Flow Altering Statements
+ 
+    - break
+    - continue
+
+**for loop** : Executes a block of code a specified number of times, typically iterating over a range of values.
+
+Ex:
+    for i in range(11,21):
+    print(i+10)
+
+output: 
+      
+    21
+    22
+    23
+    24
+    25
+    26
+    27
+    28
+    29
+    30
+
+**while loop** : Executes a block of code as long as a specified condition is true.
+
+Ex:
+   
+    a=1
+    while a<=20:
+    print(a)
+    a=a+1
+
+output: 
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20
+
+**if** : The if statement evaluates a condition and executes the block of code if the condition is True.
+
+Ex:
+
+    money=20000
+    iphone=50000
+    if money>iphone:
+    print('I will buy iphone')
+  
+    #it won't print anything it will be silent
+
+**else** : The else block executes when the if condition is False.
+
+Ex:
+
+    money=20000
+    iphone=50000
+    if money>iphone:
+    print('I will buy iphone')
+    else:
+    print('I will not buy an iphone')
+
+output:
+
+    I will not buy an iphone
+
+**elif** : The elif statement allows you to check multiple conditions.
+
+Ex:
+    money=20000
+    iphone=50000
+    samsung=25000
+    vivo=15000
+    if money>iphone:
+    print('I will buy iphone')
+    elif money>samsung:
+    print('i will buy samsung')
+    elif money>vivo:
+    print('i will buy vivo')
+    else:
+    print('i wont buy any phone')
+
+output: 
+
+    i will buy vivo
+
+**break** : The break statement is used to exit the loop prematurely when a certain condition is met.
+
+Ex:
+ 
+    for i in range(11,21):
+    print(i)
+    if i==13:
+    break
+
+output:
+ 
+    11
+    12
+    13
+
+**continue** : The continue statement skips the current iteration and proceeds with the next iteration.
+
+Ex:
+
+    for i in range(11,21):
+    if i==16:
+    continue
+    print(i)
+
+output:
+
+    11
+    12
+    13
+    14
+    15
+    17
+    18
+    19
+    20
+
+**pass** : The pass statement is a placeholder for future code. It does nothing when executed but is used to define an empty block.
+
+Ex:
+
+    if x > 5:
+    pass  # placeholder for future implementation
+
+# Functions
+
+Function is used for **reusability** - Writing the logic one time and using them many times.
+
+### Syntax:
+          
+    def <[function_name]> ():
+     - logic here
+
+Ex: 
+   
+    def sharuk():
+      print('good morning')
+    sharuk()
+
+output:
+
+    good morning
+
+There are **two** types in the Functions
+
+1. Non - Parameter Functions
+
+Ex:
+ 
+    def sharuk():
+       print('good morning')
+    sharuk()
+
+output: 
+
+    good morning
+
+2. Parameter Functions
+
+Ex: 
+
+    def sai(a,b):
+      print(a+b)
+    sai(10,20)
+
+output: 
+   
+    30
+
+## Local Variable and Global Variable
+
+**Local variable** : The variable in the function is called Local.
+
+Ex:
+
+    #local variable
+    def fun():
+      p=100  #local variable
+      print(f'i am using inside the function:{p}')
+    fun()
+    print(f'i am using outside the function:{p}')
+
+output:
+
+    error, it can't call outside fun because it is local variable
+
+**Global variable** : we call from anywhere we access it in inside and outside of the function.
+
+Ex: 
+
+    k=60 #global variable
+    def fun():
+       print(f'i am using inside the function:{k}')
+    fun()
+    print(f'i am using outside the function:{k}')
+
+outputt: 
+
+    i am using inside the function:60
+    i am using outside the function:60
+
+## Conversion of local to global 
+
+Ex:
+
+    def fun():
+      global p
+      p=100
+      print(f'i am using inside the fun:{p}')
+    fun()
+    print(f'i am using outside the fun:{p}')
+
+output:
+
+    i am using inside the fun:100
+    i am using outside the fun:100
+
+### Return key word :
+return gives the values/variables which present in return 
+
+Ex:
+ 
+    def fun(a,b):
+       c=[]
+       for i in range(a,b):
+         if i%2==0:
+           c.append(i)
+       return c
+
+    sol=fun(11,21)
+    print(sol)
+ 
+output:
+
+    [12, 14, 16, 18, 20]
+
+# Lambda functions:
+ 
 
