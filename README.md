@@ -1083,3 +1083,135 @@ output:
 - clear
 - copy
 
+**get** : It is used to call required data from the existing dictionary.
+
+Ex: 
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    print(b.get('carrot'))
+
+output:
+
+    100
+
+***update** : It is used to add key_value to the existing dictionary.
+
+Ex:
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    b.update({'grapes':200})
+    print(b)
+
+output:
+
+ {'apple':500,'carrot':100,'banana':1000,'grapes':200}
+
+**pop** : It will take key from the user and will remove that key_value.
+
+Ex:
+  
+    b = {'apple':500,'carrot':100,'banana':1000}
+    b.pop('carrot')
+    print(b)
+
+output:
+ 
+    b = {'apple':500,'banana':1000}
+
+**popitem** : It will remove last key_value.
+
+Ex:
+  
+    b = {'apple':500,'carrot':100,'banana':1000}
+    b.popitem()
+    print(b)
+
+output:
+ 
+    b = {'apple':500,'carrot':100}
+
+**keys** : It will print all the keys in the dictionary.
+
+Ex:
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    print(b.keys())
+
+output:
+    
+    dict_keys([apple,carrot,banana])
+
+**values** : It will print all the values in the dictionary.
+
+Ex:
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    print(b.values())
+
+output:
+    
+    dict_values([500,100,1000])
+
+**items** : It will print both keys and values in the dictionary.
+
+Ex:
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    print(b.items())
+
+output:
+    
+    dict_keys([(apple,500),(carrot,100),(banana,1000)])
+
+**clear** : It is used to clear the data from the variable but variable will be alive in the memory.
+
+Ex:
+
+    b = {'apple':500,'carrot':100,'banana':1000}
+    b.clear()
+    print(b)
+
+output:
+    
+    {}
+
+**copy** : There are 2 types of copy techniques
+
+- deep copy
+- shallow copy
+
+**deep copy** : It has same address.
+
+Ex:
+
+    b={'apple':500,'carrot':100,'banana':1000}
+    a=b
+    print(a)
+    print(b)
+    print(id(a))
+    print(id(b))
+output:
+    
+    {'apple': 500, 'carrot': 100, 'banana': 1000}
+    {'apple': 500, 'carrot': 100, 'banana': 1000}
+    138914830239936
+    138914830239936
+
+**shallow copy** : It has different address and if we add value to a it won't copy in b.
+
+Ex:
+    b={'apple':500,'carrot':100,'banana':1000}
+    a=b.copy()
+    print(a)
+    print(b)
+    print(id(a))
+    print(id(b))
+
+output:
+
+    {'apple': 500, 'carrot': 100, 'banana': 1000}
+    {'apple': 500, 'carrot': 100, 'banana': 1000}
+    138914831763712
+    138914831764480
+
+
